@@ -1,0 +1,25 @@
+.sterile-coffin__btn
+{
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #757575 0%, #363636 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    position: relative;
+    outline: none;
+    transition: all 0.35s;
+}
+
+
+.sterile-coffin__btn:after
+{
+    background: #a026e7;
+}
+
+.shooter-2__btn:after
+{
+    background: #ffae00;
+}
+

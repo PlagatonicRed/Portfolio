@@ -1,0 +1,47 @@
+.sterile-coffin__content h1
+{
+    color: #8d55ce
+}
+
+.shooter-2__content h1
+{
+    color: #fbff00
+}
+
+.sterile-coffin__content p
+{
+    color: #fff
+}
+
+.large-text-container p
+{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.shooter-2__content p
+{
+    color: rgb(255, 201, 99)
+}
+
+.btn .read-more
+{
+    font-size: 18px;
+    display: inline;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+    .content h1
+    {
+        margin: 0;
+    }
+    .content p
+    {
+        margin: 0;
+    }
+}

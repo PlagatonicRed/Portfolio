@@ -1,0 +1,95 @@
+.content h1 
+{
+    font-size: 4rem;
+    background-size: 100%;
+}
+
+.gameDev__content h1 
+{
+    color: #83fc7e;
+}
+
+.compSci__content h1
+{
+    color: #21d4fd
+}
+
+.main__content h1
+{
+    color: #ff8177
+}
+
+.content h2
+{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+
+}
+
+.content p
+{
+    color:#ff7300;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Style changes that are applied on a verticle tab */
+@media screen and (max-width: 768px)
+{
+
+
+    .content
+    {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .content h1 
+    {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .content h2
+    {
+        font-size: 3rem;
+    }
+
+    .content p
+    {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .content h2
+    {
+        font-size: 4rem;
+        background-color: #ff8177;
+        background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+        background-size: 100%;
+    
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .content h1 
+    {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .content h2
+    {
+        font-size: 2rem;
+    }
+
+    .content p
+    {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+}

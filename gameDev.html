@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/homePage/containerStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/buttonStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/textStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/footerStyles.css">
+    <script src="https://kit.fontawesome.com/bb15663a51.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/gameDevPage/textStyles.css">
+    <link rel="stylesheet" href="CSS/gameDevPage/buttonStyles.css">
+    <link rel="stylesheet" href="CSS/gameDevPage/containerStyles.css">
+
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch('menuBar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+            });
+    </script>
+
+    <!--TODO CHange this to be verticle dividers for each projh -->
+    <div class="main">
+        
+        <div class="main__container">
+
+            <div class="main__img--container">
+                <a href="https://xxvoltarxx.itch.io/sterile-coffin" target="_blank">
+                    <img src="images/Sterile-Coffin-Cover.png" alt="pic" id="main__img">
+                </a>
+            </div>
+
+            <div class="content sterile-coffin__content">
+                <h1>Sterile Coffin</h1>
+                <p>
+                    Sterile Coffin is a short, first person, movement shooter, set in an
+                    abandoned laboratory. As the player you must escape from this
+                    unknown and unnatural environment by fighting your way through waves of
+                    enemies.
+                </p>
+                <button class="btn sterile-coffin__btn">
+                    <p class="read-more">Read More</p>
+                </button>
+
+            </div>
+                <div class="large-text-container">
+                    <p>
+                        Development Time:
+                        6 weeks
+                        <br>
+                        <br>
+                        Team Size:
+                        5
+                        <br>
+                        <br>
+                        Goals:
+                        <br>
+                        Create designer friendly tools
+                        <br> learn how to create a secure save/load system
+                        <br> Create clean and reusable scripts.
+
+                        <br>
+                        <br>
+                        Role:
+                        Programming Lead
+                    </p>
+                    <p><br>
+
+                        
+                        My contributions to Sterile Coffin are primarily programming related, as I was
+                        repsonsible for game systems, player controls & movement, audio and animation integration,
+                        and Enemy AI. Though out of all of these I feel as if I am most proud of the systems I created
+                        for the game. 
+                    </p>
+                    <p><br>                       
+                        I also went into this project with two main things that I wanted to improve on by the end of developement.
+                        Firstly, I wanted to integrate uml design theory into my game development process and also generally
+                        take more time to make proper documentation for any scripts that I make.
+                        Secondly, I wanted learn how to use Unity's custom GUI tools to develop more designer friendly
+                        tools that could speed up production.
+                </div>
+
+
+        </div>
+
+        <div class="main__container">
+
+            <div class="main__img--container">
+                    <!-- This is where an image is loaded in -->
+                <a href="https://plagatonicred.itch.io/2d-shooter-two-electric-boogaloo" target="_blank">
+                    <img src="images/2D_Shooter2_Electric.png" alt="pic" id="main__img">
+                    <img src="images/2D-Shooter-1.png" alt="pic" id="main__img">
+                </a>
+            </div>
+
+            <div class="content shooter-2__content">
+                <h1>2D-Shooter 2: Electric Boogaloo</h1>
+                <!-- <h2>TECHNOLOGY</h2> -->
+                <p>
+                    This was one of the first games that I made on my own, I think it turned out very well and the gameplay
+                    is actually quite fun
+                </p>
+                <button class="btn sterile-coffin__btn">
+                    <p class="read-more">Read More</p>
+                </button>
+            </div>
+
+            <div class="large-text-container">
+                <p>
+                    Development Time:
+                    2 weeks
+                    <br>
+                    <br>
+                    Team Size:
+                    solo
+                    <br>
+                    <br>
+                    Goals:
+                    <br> Create designer friendly tools
+                    <br> learn how to create a secure save/load system
+                    <br> Create clean and reusable scripts.
+                    <br>
+                    <br>
+                    My contributions to Sterile Coffin are primarily programming related, as I was
+                    repsonsible for game systems, player controls & movement, audio and animation integration,
+                    and Enemy AI. Though out of all of these I feel as if I am most proud of the systems I created
+                    for the game. 
+                    <br>
+                    <br>
+                    I also went into this project with two main things that I wanted to improve on by the end of developement.
+                    Firstly, I wanted to integrate uml design theory into my game development process and also generally
+                    take more time to make proper documentation for any scripts that I make.
+                    Secondly, I wanted learn how to use Unity's custom GUI tools to develop more designer friendly
+                    tools that could speed up production.
+                    <br>
+                    <br>
+                    
+                </p>
+                <p> 
+                    Testing something out here
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="main__container">
+
+            <div class="main__img--container">
+                <!-- This is where an image is loaded in -->
+                <a href="https://plagatonicred.itch.io/welcome-to-sol" target="_blank">
+                    <img src="images/Welcome_To_Sol.png" alt="pic" id="main__img">
+                </a>
+            </div>
+
+            <div class="content main__content">
+                <h1>Welcome to Sol</h1>
+                <!-- <h2>TECHNOLOGY</h2> -->
+                <p>
+                    This is my first solo game project I made. A solar system simulator
+                    that models the planets and their major moons orbits around the sun.
+                </p>
+                <button class="btn sterile-coffin__btn">
+                    <p class="read-more">Read More</p>
+                </button>
+
+            </div>
+
+            <div class="large-text-container">
+                <p>
+                    Development Time:
+                    2 weeks
+                    <br>
+                    <br>
+                    Goals:
+                    <br> Create designer friendly tools
+                    <br> learn how to create a secure save/load system
+                    <br> Create clean and reusable scripts.
+
+                    <br>
+                    <br>
+                    Role:
+                    <br>
+                    Programming Lead
+                    <br>
+                    <br>
+                    My contributions to Sterile Coffin are primarily programming related, as I was
+                    repsonsible for game systems, player controls & movement, audio and animation integration,
+                    and Enemy AI. Though out of all of these I feel as if I am most proud of the systems I created
+                    for the game. 
+                    <br>
+                    <br>
+                    I also went into this project with two main things that I wanted to improve on by the end of developement.
+                    Firstly, I wanted to integrate uml design theory into my game development process and also generally
+                    take more time to make proper documentation for any scripts that I make.
+                    Secondly, I wanted learn how to use Unity's custom GUI tools to develop more designer friendly
+                    tools that could speed up production.
+                    <br>
+                    <br>
+                    
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- This reads the footer.html and dynamically inserts it into the page -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    <script src="app.js" defer></script>
+</body>
+</html>

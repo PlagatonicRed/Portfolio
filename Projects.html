@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/homePage/containerStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/buttonStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/textStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/footerStyles.css">
+    <script src="https://kit.fontawesome.com/bb15663a51.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch('menuBar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+            });
+    </script>
+    <!--TODO CHange this to be verticle dividers for each projh -->
+
+    <div class="main">
+        <div class="main__container">
+            <div class="content gameDev__content">
+                <h1>Game Developement</h1>
+                <!-- <h2>TECHNOLOGY</h2> -->
+                <p>
+                    These are all the games I've worked on as well as some general game systems that I have
+                    developed.
+                </p>
+
+                <button class="btn gameDev__btn" onclick="document.querySelector('.gameDev__btn a').click()">
+                    <a href="gameDev.html">View Games</a>
+                </button>
+            </div>
+            <div class="content compSci__content">
+                <h1>Computer Science</h1>
+                <!-- <h2>TECHNOLOGY</h2> -->
+                <p>
+                    These projects are more techincal projects that I have worked on over the years.
+                </p>
+                <button class="btn compSci__btn" onclick="document.querySelector('.compSci__btn a').click()">
+                    <a href="compSci.html">View Other</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- This reads the footer.html and dynamically inserts it into the page -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+/* General Styles */
+* 
+{
+    
+    box-sizing: border-box; /* Ensures padding and border are included in an element's width and height */
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    font-family: 'Kumbh Sans', sans-serif; /* Sets a default font for the entire document */
+}
+
+/* Navbar Container Styles */
+.navbar 
+{
+    background: #111111; /* Sets the navbar background color to dark gray */
+    height: 80px; /* Sets the height of the navbar */
+    display: flex; /* Uses flexbox to layout the navbar content */
+    justify-content: center; /* Centers items horizontally within the navbar */
+    align-items: center; /* Centers items vertically within the navbar */
+    font-size: 1.2rem; /* Sets the font size of the navbar's text */
+    position: sticky; /* Makes the navbar stick to the top of the viewport when scrolling */
+    z-index: 999; /* Ensures the navbar appears above most other elements */
+}
+
+/* Navbar Inner Container */
+.navbar__container 
+{
+    display: flex; /* Uses flexbox to arrange child elements */
+    
+    justify-content: space-between; /* Distributes space between child elements */
+    align-items: center;
+    height: 80px; /* Matches the height of the navbar */
+    z-index: 1; /* Ensures it appears above other elements in the navbar */
+    width: 100%; /* Makes the container take up the full width of the viewport */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px; /* Adds padding on the left and right for spacing */
+}
+
+/* Navbar Logo Styles */
+#navbar__logo 
+{
+    background-color: #ff8177; /* Fallback background */
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); /* Gradient */
+    background-size: 100%; /* Gradient fills the text */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    cursor: pointer; /* Pointer on hover */
+    text-decoration: none; /* Removes underline */
+    font-size: 2rem; /* Font size */
+    width: auto; /* Fit content width */
+    margin-left: auto; /* Push the logo to the right */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/* Navbar Menu Styles */
+.navbar__menu 
+{
+    display: flex; /* Uses flexbox to arrange menu items horizontally */
+    align-items: center; /* Centers menu items vertically */
+    list-style: none; /* Removes bullet points from the list items */
+    text-align: center; /* Aligns text in the menu items */
+}
+
+/* Navbar Item Styles */
+.navbar__item 
+{
+    height: 80px; /* Ensures menu items are the same height as the navbar */
+}
+
+/* Navbar Links Styles */
+.navbar__links 
+{
+    color: #fff; /* Sets the text color to white */
+    display: flex; /* Uses flexbox to layout the links */
+    align-items: center; /* Centers the text vertically within the link area */
+    justify-content: center; /* Centers the text horizontally within the link area */
+    text-decoration: none; /* Removes the default underline from links */
+    padding: 0 1rem; /* Adds horizontal padding for spacing */
+    height: 100%; /* Makes the links fill the full height of the navbar */
+
+    transition: all 0.3s ease; /* Transition back from the hover state */
+}
+
+/* Navbar Button Styles */
+.navbar__btn 
+{
+    
+    display: flex; /* Uses flexbox to layout button content */
+    justify-content: center; /* Centers button content horizontally */
+    align-items: center; /* Centers button content vertically */
+    padding: 0 1rem; /* Adds horizontal padding for spacing */
+    width: 100%; /* Ensures the button spans the full width of its container */
+}
+
+.navbar__links:hover
+{
+    /* TODO Find ideal color for this */
+    color: #ff4242;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Hero section CSS */
+.main
+{
+    background-color: #141414
+}
+
+.main__container
+{
+    display: grid;
+    gap: 25px;
+    /* This devides the columns into ratioed sections based on the input */
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+
+}
+
+/* Grid Container for Image */
+.main__img--container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr; /* Create one column */
+    grid-auto-rows: auto; /* Ensure the rows adjust based on content size */
+}
+
+
+#main__img
+{
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    height: auto;
+    width: 100%;
+}
+/* This basically overrides the other style classes if a certain parameter is met (in this case width being less than 960 pixels) */
+@media screen and (max-width: 960px)
+{
+    .navbar__container
+    {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar__menu
+    {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+
+        transition: all 0.5s ease;
+    }
+
+    .navbar__menu.active
+    {
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo
+    {
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar
+    {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar__item
+    {
+        width: 100%;
+    }
+
+    .navbar__links
+    {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu
+    {
+        position: absolute;
+        top: 20%;
+        right: 95%;
+        transform: translate(5%, 20%)
+    }
+
+    .navbar__btn
+    {
+        padding-bottom: 2rem;
+    }
+
+    .navbar__toggle .bar
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar__links:hover
+    {
+        /* TODO Find ideal color for this */
+        color: #ff4242;
+        font-size: 1.8rem;
+        transition: all 0.3s ease;
+    }
+
+    /* Animation for the hamburger bar */
+    /* Runs when the is-active toggle is triggered */
+
+    #mobile-menu.is-active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    /* nth child targets the second child of the container */
+    #mobile-menu.is-active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+
+
+    #mobile-menu.is-active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+}
+
+/* Style changes that are applied on a verticle tab */
+@media screen and (max-width: 768px)
+{
+    .main__container
+    {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+
+    .main__btn
+    {
+        padding: 12px 36px;
+        margin: 2.5rem, 0;
+    }
+}

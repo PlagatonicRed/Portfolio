@@ -1,0 +1,93 @@
+
+
+/* Grid Container */
+.main__container {
+    align-items: start;
+    grid-template-columns: 2fr 1fr; /* Two columns */
+
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Add padding around the container */
+    height :fit-content;
+    /* background-color: #e0e0e0;
+    border: 2px solid #512da8; */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+}
+
+/* Text Content */
+.content {
+    grid-column: 1 / 2; /* Place in the first column */
+    grid-row: 1 / 2; /* Place in the first row */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent overflowing content */
+
+    gap: 10px;
+    height: 100%;
+
+    padding: 10px; /* Add inner padding for spacing */
+
+    /* background-color: #d1c4e9;
+    border: 2px solid #512da8; */
+}
+
+/* Button Alignment */
+.btn 
+{
+    margin-top: auto;
+    margin-right: auto;
+    /* background-color: #9575cd; */
+    border: none; /* No border for cleaner appearance */
+    padding: 10px 15px; /* Add padding for better size */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+/* Large Text Section */
+.large-text-container 
+{
+    margin-left: 10px;
+    margin-right: 40px;
+    align-items: center;
+    height: auto; /* Set the height as a percentage */
+    max-height: 0; /* Start with 0 max-height */
+
+    overflow: hidden; /* Hide the overflowing text */
+    position: relative; /* Ensure proper cropping */
+    grid-column: 1 / 3; /* Place in the first column */
+    grid-row: 2 / 3; /* Place in the first row */
+
+    /* background-color: #c8e6c9;
+    border: 2px solid #388e3c; */
+    transition: max-height 0.25s ease-out; /* Animate the height */
+
+}
+
+.large-text-container.active
+{
+    height: 100%;
+    transition: max-height 0.5s linear;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+
+    /* Grid Container */
+    .main__container 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Add padding around the container */
+        height :fit-content;
+        /* background-color: #e0e0e0;
+        border: 2px solid #512da8; */
+    }
+    .btn
+    {
+        margin-top: 30px;
+
+        margin-left: auto;
+    }
+}
+

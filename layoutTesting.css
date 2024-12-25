@@ -1,0 +1,71 @@
+/* General Styles */
+* 
+{
+    
+    box-sizing: border-box; /* Ensures padding and border are included in an element's width and height */
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    font-family: 'Kumbh Sans', sans-serif; /* Sets a default font for the entire document */
+}
+
+.main
+{
+    background-color: #ff0000;
+    border: 2px solid #512da8;
+
+}
+
+.main__container
+{
+    background-color: #9b9b9b;
+    border: 2px solid #512da8;
+
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-auto-rows: auto;
+    height: fit-content;
+}
+.content p
+{
+    font-size: 100px;
+}
+
+
+.content
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #8ff6faf8;
+    border: 2px solid #512da8;
+}
+
+.large-text-container
+{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: #3cff00f8;
+    border: 2px solid #512da8;
+    height: auto;
+}
+
+/* Grid Container for Image */
+.main__img--container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr; /* Create one column */
+    grid-auto-rows: auto; /* Ensure the rows adjust based on content size */
+    background-color: #ffe600f8;
+    border: 2px solid #512da8;
+}
+
+
+#main__img
+{
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    height: auto;
+    width: 100%;
+}
