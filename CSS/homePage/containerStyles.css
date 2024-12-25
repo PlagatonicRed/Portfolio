@@ -147,6 +147,17 @@
 /* This basically overrides the other style classes if a certain parameter is met (in this case width being less than 960 pixels) */
 @media screen and (max-width: 960px)
 {
+    /* Grid Container */
+    .main__container 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Add padding around the container */
+        height :fit-content;
+        /* background-color: #e0e0e0;
+        border: 2px solid #512da8; */
+    }
     .navbar__container
     {
         display: flex;
@@ -265,15 +276,16 @@
 /* Style changes that are applied on a verticle tab */
 @media screen and (max-width: 768px)
 {
-    .main__container
+    /* Grid Container */
+    .main__container 
     {
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
+        padding: 20px; /* Add padding around the container */
+        height :fit-content;
+        /* background-color: #e0e0e0;
+        border: 2px solid #512da8; */
     }
 }
 
