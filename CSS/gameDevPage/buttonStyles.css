@@ -1,4 +1,4 @@
-.sterile-coffin__btn
+.btn
 {
     font-size: 1rem;
     background-image: linear-gradient(to top, #757575 0%, #363636 100%);
@@ -20,6 +20,12 @@
 
 .shooter-2__btn:after
 {
-    background: #ffae00;
+    background: #ffbf5e;
+}
+
+.sol__btn:after
+{
+    background: #ff8177;
+
 }
 
