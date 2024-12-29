@@ -116,6 +116,7 @@
     /* This devides the columns into ratioed sections based on the input */
     grid-template-columns: 1fr 1fr;
     justify-self: center;
+    align-items: center;
     margin: 0 auto;
     height: 90vh;
     background-color: #141414;
