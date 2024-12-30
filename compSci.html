@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dev Projects</title>
+    <link rel="stylesheet" href="CSS/homePage/containerStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/buttonStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/textStyles.css">
+    <link rel="stylesheet" href="CSS/homePage/footerStyles.css">
+    <script src="https://kit.fontawesome.com/bb15663a51.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/gameDevPage/textStyles.css">
+    <link rel="stylesheet" href="CSS/gameDevPage/buttonStyles.css">
+    <link rel="stylesheet" href="CSS/gameDevPage/containerStyles.css">
+
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch('menuBar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+            });
+    </script>
+
+    <!--TODO CHange this to be verticle dividers for each projh -->
+    <div class="main">
+        <div class="main__container">
+
+            <div class="main__img--container">
+                <!-- This is where an image is loaded in -->
+                <a href="https://github.com/PlagatonicRed/3D-renderer" target="_blank">
+                    <img src="images/3D-Render.png" alt="pic" id="main__img">
+                </a>
+            </div>
+
+            <div class="content main__content">
+                <h1>Basic 3D renderer</h1>
+                <!-- <h2>TECHNOLOGY</h2> -->
+                <p>
+                    A basic 3D renderer.
+                </p>
+                <button class="btn sol__btn">
+                    <p class="read-more">Read More</p>
+                </button>
+
+            </div>
+
+            <div class="large-text-container">
+                <section class="intro">
+                    <h2 style="color: white;">Development Details</h2>
+                    <ul style="color: white;">
+                        <li><strong>Development Time:</strong> 2 weeks</li>
+                        <li><strong>Team Size:</strong> Solo</li>
+                        <li><strong>Goals:</strong>
+                            <ul>
+                                <li>Learn how 3D rendering works on lower level</li>
+                                <li>Be able to render 3D images on my own</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="body">
+                    <div class="image__p"> 
+                        <figure style="float: left;">
+                            <img src="images/Titan.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
+                            <figcaption><i>An in-game image of one of Saturn's moons: Titan.</i></figcaption>
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Officia possimus magnam illum a, minus debitis ut. Deserunt
+                            laudantium vero magni ipsam, suscipit eaque possimus vitae
+                            illum numquam quidem fugiat quia.
+                        </p>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <div class="main__container">
+
+            <div class="main__img--container">
+                <!-- This is where an image is loaded in -->
+                <a href="https://github.com/PlagatonicRed/ConwaysLife" target="_blank">
+                    <img src="images/Conway's_Life_Cover.gif" alt="pic" id="main__img">
+                </a>
+            </div>
+
+            <div class="content main__content">
+                <h1>Conway's Life </h1>
+                <!-- <h2>TECHNOLOGY</h2> -->
+                <p>
+                    A basic digital drawing program with Conway's game of
+                    life integrated into it.
+                </p>
+                <button class="btn sol__btn">
+                    <p class="read-more">Read More</p>
+                </button>
+
+            </div>
+
+            <div class="large-text-container">
+                <section class="intro">
+                    <h2 style="color: white;">Development Details</h2>
+                    <ul style="color: white;">
+                        <li><strong>Development Time:</strong> 2 weeks</li>
+                        <li><strong>Team Size:</strong> Solo</li>
+                        <li><strong>Goals:</strong>
+                            <ul>
+                                <li>Learn how 3D rendering works on lower level</li>
+                                <li>Be able to render 3D images on my own</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="body">
+                    <div class="image__p"> 
+                        <figure style="float: left;">
+                            <img src="images/Titan.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
+                            <figcaption><i>An in-game image of one of Saturn's moons: Titan.</i></figcaption>
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Officia possimus magnam illum a, minus debitis ut. Deserunt
+                            laudantium vero magni ipsam, suscipit eaque possimus vitae
+                            illum numquam quidem fugiat quia.
+                        </p>
+
+                    </div>
+                </section>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- This reads the footer.html and dynamically inserts it into the page -->
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    <script src="app.js" defer></script>
+</body>
+</html>

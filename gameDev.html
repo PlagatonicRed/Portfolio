@@ -26,98 +26,131 @@
 
     <!--TODO CHange this to be verticle dividers for each projh -->
     <div class="main">
-        
         <div class="main__container">
 
             <div class="main__img--container">
-                <a href="https://xxvoltarxx.itch.io/sterile-coffin" target="_blank">
-                    <img src="images/Sterile-Coffin-Cover.png" alt="pic" id="main__img">
+                <!-- This is where an image is loaded in -->
+                <a href="https://plagatonicred.itch.io/welcome-to-sol" target="_blank">
+                    <img src="images/Welcome_To_Sol.png" alt="pic" id="main__img">
                 </a>
             </div>
 
-            <div class="content sterile-coffin__content">
-                <h1>Sterile Coffin</h1>
+            <div class="content main__content">
+                <h1>Welcome to Sol</h1>
+                <!-- <h2>TECHNOLOGY</h2> -->
                 <p>
-                    Sterile Coffin is a short, first-person movement shooter set in an
-                    abandoned laboratory. As the player, you must escape from this
-                    unknown and unnatural environment by fighting your way through waves of
-                    enemies.
+                    This is my first solo game project I made. A solar system simulator
+                    that models the planets and their major moons orbits around the sun.
                 </p>
-                <button class="btn sterile-coffin__btn">
+                <button class="btn sol__btn">
                     <p class="read-more">Read More</p>
                 </button>
 
             </div>
-                <div class="large-text-container">
-                    <p>
-                        Development Time:
-                        6 weeks
-                        <br>
-                        <br>
-                        Team Size:
-                        5
-                        <br>
-                        <br>
-                        Goals:
-                        <br>
-                        Create designer friendly tools
-                        <br> Learn how to create a secure save/load system
-                        <br> Create clean and reusable scripts.
-                        <br>
-                        <br>
-                        Role:
-                        Programming Lead
-                    </p>
-                    <p><br>
-                        One of the most challenging aspects of creating this game was definitely making the movement feel good.
-                        My first approach to this problem was simple: make the movement physics-based and use forces to allow the
-                        player to gain momentum and feel realistic. This did not turn out well. One of the main issues with this 
-                        approach was that, well, realistic movement is realistic. The player needed time to counteract their momentum
-                        if they wanted to change directions, resulting in very sluggish and unresponsive gameplay.
-                    </p>
-                    <p><br>
-                        The next approach I tried was to still use physics but make the physics work in an unrealistic way. That is,
-                        simulate forces on the player but modify how those forces act so that the movement feels snappy while still
-                        giving the character a sense of weight and momentum. The hardest part of this was creating custom physics
-                        to allow the player to have both a max speed when using basic inputs, as well as the ability to exceed that
-                        max speed if an external force (such as an explosion) was applied to the character. Unfortunately, due to
-                        time constraints, the game does not include any mechanics to generate explosive force. However, this
-                        functionality can still be observed when using the dash ability.
-                    </p>
-                    <p><br>
-                        Another aspect of this project that I learned a great deal from was the creation of the encounter system.
-                        My main objective when planning and developing this system was to enable designers to streamline the creation
-                        of encounters for each level. The primary way I accomplished this was through Unity's custom GUI tools.
-                        I had always been interested in learning how to use these tools, so I made it my goal for this project to
-                        utilize them to simplify aspects of design that would otherwise become tedious and inefficient.
-                    </p>
-                    <p><br>
-                        This mindset led to the development of our encounter system. Using Unity's custom GUI tools, I created an editor
-                        tool that allowed our designer to create "encounters" (hence the name encounter system). An encounter consisted
-                        of a set number of waves, and each wave would spawn a specified number of enemies at various locations around
-                        the encounter area. The editor tool also allowed the designer to drag all the enemies they wanted to spawn
-                        in a wave, position them where they should spawn, and then simply press a single button to create a new wave
-                        for the selected encounter. This process enabled our designer to rapidly create dynamic enemy encounters in
-                        mere minutes, whereas previously it could have taken upwards of half an hour. Additionally, the tool handled
-                        the implementation of waves and encounters into the game, meaning that once one was set up, we could immediately
-                        test and iterate on it without requiring any extra integration steps.
-                    </p>
-                    <p><br>
-                        I also wanted to experiment with creating a save/load system for this game to allow players to save their progress
-                        and return later if they desired. This system became integrated into the game's checkpoint system as an autosave
-                        feature. To elaborate further, each checkpoint doubles as a save point, saving your progress and storing it in
-                        the designated save file. Every time you die, the game loads the saved data from your file and restarts you at
-                        the checkpoint. The save file is also binary-encoded to prevent easy alteration.
-                    </p>
-                    <p><br>
-                        <img src="images/Sterile_Coffin_UML.png" alt="Sterile Coffin Cover" id="main__img" style="float: right; margin-left: 15px; width: 1000px;">
-                        As a way to visually document the relationships between all these systems, I maintained a basic UML diagram throughout the project
-                        (with functions and variables omitted). Before working on any new system, I spent time integrating it into this UML diagram. Doing
-                        this throughout the project made my code much cleaner and more decoupled, as I had already planned out the necessary relationships
-                        beforehand and only added new ones when required.
-                    </p>
-                </div>
 
+            <div class="large-text-container">
+                <section class="intro">
+                    <h2 style="color: white;">Development Details</h2>
+                    <ul style="color: white;">
+                        <li><strong>Development Time:</strong> 2 weeks</li>
+                        <li><strong>Team Size:</strong> Solo</li>
+                        <li><strong>Goals:</strong>
+                            <ul>
+                                <li>Create a realistic solar system simulation</li>
+                                <li>Integrate my physics knowledge and interest in astronomy into a game</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="body">
+                    <div class="image__p"> 
+                        <figure style="float: left; ">
+                            <img src="images/Titan.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
+                            <figcaption><i>An in-game image of one of Saturn's moons: Titan.</i></figcaption>
+                        </figure>
+                        <p>
+                            I've always had an interest in astronomy, ever since I was in kindergarten. 
+                            I've also always loved watching videos on universe sandbox and been fascinated
+                            by how one could develop such games. So when my first game development class tasked us
+                            with making a solar system type project, I was ecstatic. However, what they wanted us to
+                            do was simply have planets rotate about each other—something that I thought was rather trivial
+                            given the complexity of planetary orbits. So, I decided to make my own version of the project from scratch.
+                        </p>
+
+                    </div>
+
+                    <div class="image__p">
+                        <figure style="float: right; ">
+                            <img src="images/Uranus_Orbits.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width:300px">
+                            <figcaption><i>The moons of Uranus orbiting around<br> the planet, viewed from the ecliptic.</i></figcaption>
+                        </figure>
+                        <p>
+                            The first thing, and one of the most challenging, was properly integrating the formulas related to
+                            orbital mechanics. Using newtonian physics I created a system that allowed me to place planets any distance
+                            from a central object and calculate it's orbital path and velocity around the selected object.
+                        </p>
+                    </div>
+
+                    <div class="image__p">
+                        <figure style="float: right;">
+                            <embed src="documents/Earth Fact Sheet.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=44" style="width: 400px; height: 400px;">
+                            <figcaption ><i>Source for information on Earth</i></figcaption>
+                        </figure>
+                        <p>
+                            I also wanted it to be as accurate as possible, so I used planetary data-sheets offered by NASA on their website and
+                            integrated them into my simulation. I used scriptable objects to store each planets data and to allow for generalization
+                            of planetary objects. This resulted in all bodies having (relatively) accurate rotational speeds, orbital inclinations, 
+                            orbital speeds, eccentricity, etc. All in all it ended up taking me several hours to just input all the data for the 20 bodies that I included
+                            in the game.
+                        </p>
+                    </div>
+                    <section class="body">
+                        <div class="image__p"> 
+                            <div style="display: flex;">
+                                <figure >
+                                    <img src="images/Earth.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 280px;">
+                                    <figcaption><i>An in-game image of the Earth and the Moon</i></figcaption>
+                                </figure>
+                                <figure >
+                                    <img src="images/Ganymede.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 300px;">
+                                    <figcaption><i>An in-game image of one of <br> Jupiters's moons: Ganymede.</i></figcaption>
+                                </figure>
+                            </div>
+
+                            <p>
+                                I also used real NASA mappings of many of the bodies (not all of them had complete texture mappings)
+                                in order to texture each planet and many of the moons in order to further increase the accuracy of the solar
+                                model. Finding these texture mappings also took quite a long time, especially some of the more obscure moons.
+                            </p>
+                        </div>
+                    </section>
+
+                    <div class="image__p">
+                        <figure style="float: right;">
+                            <img src="images/Scale.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width:300px">
+                            <figcaption><i>A display of the scale present within the game.</i></figcaption>
+                        </figure>
+                        <p>
+                            I also really wanted to provide a 1 to 1 scale distance between stellar bodies, using 1 unit in unity as 1meter
+                            however, the distances between each bodie are so vast that it caused immense floating point errors just from the distances
+                            between the sun and the Earth, so I had to scale it down by a factor of 100,000.
+                            Regardless of this, I do still believe I was able to capture the shear magnitude of the distance between each planet
+                            even if it isn't 100% to scale. The other issue, is that the shear difference in size between objects also resulted in floating point
+                            imprecision, but instead for mesh vertices, this is particularly noticeable on phobos and deimos, the two smallest major moons in the
+                            solar system.
+                        </p>
+                    </div>
+
+                    <p><br>
+                        I was, and still am, very happy with how this project turned out, I think it is one of my most
+                        visually and statisically impressive projects, but as a game I do feel that it falls extremely short. 
+                        In fact, I would say it's less of a game, and more of an interactive experience. None the less, it is
+                        an interactive experience that I love showing to people and nerding out about all the different planetary
+                        statistics I incorprorated into this project.
+                    </p>
+                </section>
+            </div>
 
         </div>
 
@@ -203,80 +236,106 @@
         <div class="main__container">
 
             <div class="main__img--container">
-                <!-- This is where an image is loaded in -->
-                <a href="https://plagatonicred.itch.io/welcome-to-sol" target="_blank">
-                    <img src="images/Welcome_To_Sol.png" alt="pic" id="main__img">
+                <a href="https://xxvoltarxx.itch.io/sterile-coffin" target="_blank">
+                    <img src="images/Sterile-Coffin-Cover.png" alt="pic" id="main__img">
                 </a>
             </div>
 
-            <div class="content main__content">
-                <h1>Welcome to Sol</h1>
-                <!-- <h2>TECHNOLOGY</h2> -->
+            <div class="content sterile-coffin__content">
+                <h1>Sterile Coffin</h1>
                 <p>
-                    This is my first solo game project I made. A solar system simulator
-                    that models the planets and their major moons orbits around the sun.
+                    Sterile Coffin is a short, first-person movement shooter set in an
+                    abandoned laboratory. As the player, you must escape from this
+                    unknown and unnatural environment by fighting your way through waves of
+                    enemies.
                 </p>
-                <button class="btn sol__btn">
+                <button class="btn sterile-coffin__btn">
                     <p class="read-more">Read More</p>
                 </button>
 
             </div>
+                <div class="large-text-container">
 
-            <div class="large-text-container">
-                <p>
-                    Development Time:
-                    2 weeks
-                    <br>
-                    <br>
-                    Team Size:
-                    solo
-                    <br>
-                    <br>
-                    Goals:
-                    <br> Create a realistic solar system simulation
-                    <br> integrate my physics knowledge and interest in astronomy into a game
-                </p>
-                <p><br>
-                    I've always had an interest in astronomy, ever since I was in kindergarten. 
-                    I've also always loved watching videos on universe sandbox and been fascinated
-                    by how one could develop such games.
-                    So when my first game development class tasked us with making a solar system type project,
-                    I was excstatic. However, what they wanted us to do was simply have planets rotate about each other
-                    something that I thought was rather trivial given the complexity of planetary orbits. So, I decided to
-                    make my own version of the project from scratch.
-                </p>
-                <p><br>                       
-                    The first thing, and one of the most challenging, was properly integrating the formulas related to
-                    orbital mechanics. I won't go too far into detail here, but I created custom physics to model the gravitational
-                    interaction between bodies and also created functions that calculated the orbital path of an object about another.
-                    I also wanted it to be as accurate as possible, so I used planetary data-sheets offered by NASA on their website and
-                    integrated them into my simulation. I used scriptable objects to store each planets data and to allow for generalization
-                    of planetary objects. This resulted in all bodies having (relatively) accurate rotational speeds, orbital inclinations, 
-                    orbital speeds, eccentricity, etc. All in all it ended up taking me several hours to just input all the data for the 20 bodies that I included
-                    in the game.
-                </p>
-                <p><br>
-                    I also used real NASA mappings of many of the bodies (not all of them had complete texture mappings)
-                    in order to texture each planet and many of the moons in order to further increase the accuracy of the solar
-                    model. Finding these texture mappings also took quite a long time, especially some of the more obscure moons.
-                    I also really wanted to provide a 1 to 1 scale distance between stellar bodies, using 1 unit in unity as 1meter
-                    however, the distances between each bodie are so vast that it caused immense floating point errors just from the distances
-                    between the sun and the Earth, so I had to scale it down by a factor of 100,000.
-                    Regardless of this, I do still believe I was able to capture the shear magnitude of the distance between each planet
-                    even if it isn't 100% to scale. The other issue, is that the shear difference in size between objects also resulted in floating point
-                    imprecision, but instead for mesh vertices, this is particularly noticeable on phobos and deimos, the two smallest major moons in the
-                    solar system.
-                </p>
-                <p><br>
-                    I was, and still am, very happy with how this project turned out, I think it is one of my most
-                    visually and statisically impressive projects, but as a game I do feel that it falls extremely short. 
-                    In fact, I would say it's less of a game, and more of an interactive experience. None the less, it is
-                    an interactive experience that I love showing to people and nerding out about all the different planetary
-                    statistics I incorprorated into this project.
-                </p>
-            </div>
+                    <p>
+                        Development Time:
+                        6 weeks
+                        <br>
+                        <br>
+                        Team Size:
+                        5
+                        <br>
+                        <br>
+                        Goals:
+                        <br>
+                        Create designer friendly tools
+                        <br> Learn how to create a secure save/load system
+                        <br> Create clean and reusable scripts.
+                        <br>
+                        <br>
+                        Role:
+                        Programming Lead
+                    </p>
+                    <p><br>
+                        One of the most challenging aspects of creating this game was definitely making the movement feel good.
+                        My first approach to this problem was simple: make the movement physics-based and use forces to allow the
+                        player to gain momentum and feel realistic. This did not turn out well. One of the main issues with this 
+                        approach was that, well, realistic movement is realistic. The player needed time to counteract their momentum
+                        if they wanted to change directions, resulting in very sluggish and unresponsive gameplay.
+                    </p>
+                    <p><br>
+                        The next approach I tried was to still use physics but make the physics work in an unrealistic way. That is,
+                        simulate forces on the player but modify how those forces act so that the movement feels snappy while still
+                        giving the character a sense of weight and momentum. The hardest part of this was creating custom physics
+                        to allow the player to have both a max speed when using basic inputs, as well as the ability to exceed that
+                        max speed if an external force (such as an explosion) was applied to the character. Unfortunately, due to
+                        time constraints, the game does not include any mechanics to generate explosive force. However, this
+                        functionality can still be observed when using the dash ability.
+                    </p>
+                    <p><br>
+                        Another aspect of this project that I learned a great deal from was the creation of the encounter system.
+                        My main objective when planning and developing this system was to enable designers to streamline the creation
+                        of encounters for each level. The primary way I accomplished this was through Unity's custom GUI tools.
+                        I had always been interested in learning how to use these tools, so I made it my goal for this project to
+                        utilize them to simplify aspects of design that would otherwise become tedious and inefficient.
+                    </p>
+                    <p><br>
+                        This mindset led to the development of our encounter system. Using Unity's custom GUI tools, I created an editor
+                        tool that allowed our designer to create "encounters" (hence the name encounter system). An encounter consisted
+                        of a set number of waves, and each wave would spawn a specified number of enemies at various locations around
+                        the encounter area. The editor tool also allowed the designer to drag all the enemies they wanted to spawn
+                        in a wave, position them where they should spawn, and then simply press a single button to create a new wave
+                        for the selected encounter. This process enabled our designer to rapidly create dynamic enemy encounters in
+                        mere minutes, whereas previously it could have taken upwards of half an hour. Additionally, the tool handled
+                        the implementation of waves and encounters into the game, meaning that once one was set up, we could immediately
+                        test and iterate on it without requiring any extra integration steps.
+                    </p>
+                    <p><br>
+                        I also wanted to experiment with creating a save/load system for this game to allow players to save their progress
+                        and return later if they desired. This system became integrated into the game's checkpoint system as an autosave
+                        feature. To elaborate further, each checkpoint doubles as a save point, saving your progress and storing it in
+                        the designated save file. Every time you die, the game loads the saved data from your file and restarts you at
+                        the checkpoint. The save file is also binary-encoded to prevent easy alteration.
+                    </p>
+                    <div class="image__p"> 
+                        <figure style="float: left; ">
+                            <img src="images/Sterile_Coffin_UML.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 1000px">
+                            <figcaption><i>The simplified systems UML diagram</i></figcaption>
+                        </figure>
+                        <p>
+                            As a way to visually document the relationships between all these systems, I maintained a basic UML diagram throughout the project
+                            (with functions and variables omitted). Before working on any new system, I spent time integrating it into this UML diagram. Doing
+                            this throughout the project made my code much cleaner and more decoupled, as I had already planned out the necessary relationships
+                            beforehand and only added new ones when required.
+                        </p>
+
+                    </div>
+                </div>
+
 
         </div>
+
+
+
     </div>
 
     <!-- This reads the footer.html and dynamically inserts it into the page -->

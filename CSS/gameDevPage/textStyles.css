@@ -1,6 +1,7 @@
 .sterile-coffin__content h1
 {
-    color: #8d55ce
+    color: #8d55ce;
+
 }
 
 .shooter-2__content h1
@@ -33,6 +34,8 @@
     color: #fff;
     text-decoration: none;
 }
+
+
 
 /* Responsive Adjustments */
 @media (max-width: 960px) {

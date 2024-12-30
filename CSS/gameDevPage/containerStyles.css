@@ -69,6 +69,25 @@
     transition: max-height 0.5s linear;
 }
 
+.image__p 
+{
+    display: flex; /* Turn it into a flex container */
+    flex-direction: column-reverse; /* Arrange items in a column */
+    justify-content: center; /* Optional: Centers the content along the main axis */
+    align-items: center; /* Optional: Centers the content along the cross axis */
+}
+.image__p figcaption
+{
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+.image__p figure
+{
+    padding: 30px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 960px) {
 
@@ -82,6 +101,28 @@
         height :fit-content;
         /* background-color: #e0e0e0;
         border: 2px solid #512da8; */
+    }
+
+    .large-text-container
+    {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .large-text-container p
+    {
+        text-align: center;
+    }
+
+    .image__p
+    {
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .body p
+    {
+        font-size: 15px;
     }
     .btn
     {
