@@ -65,10 +65,12 @@
 
                 <section class="body">
                     <div class="image__p"> 
+
                         <figure style="float: left; ">
                             <img src="images/Titan.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
                             <figcaption><i>An in-game image of one of Saturn's moons: Titan.</i></figcaption>
                         </figure>
+                        
                         <p>
                             I've always had an interest in astronomy, ever since I was in kindergarten. 
                             I've also always loved watching videos on universe sandbox and been fascinated
@@ -159,8 +161,7 @@
             <div class="main__img--container">
                     <!-- This is where an image is loaded in -->
                 <a href="https://plagatonicred.itch.io/2d-shooter-two-electric-boogaloo" target="_blank">
-                    <img src="images/2D_Shooter2_Electric.png" alt="pic" id="main__img">
-                    <img src="images/2D-Shooter-1.png" alt="pic" id="main__img">
+                    <img src="images/2D-Shooter-Cover.png" alt="pic" id="main__img">
                 </a>
             </div>
 
@@ -178,56 +179,85 @@
             </div>
 
             <div class="large-text-container">
-                <p>
-                    Development Time:
-                    2 weeks
-                    <br>
-                    <br>
-                    Team Size:
-                    solo
-                    <br>
-                    <br>
-                    Goals:
-                    <br> Create a system that allows emergent gameplay
-                    <br> Create a generic upgrade system that could be reused in future projects
-                    <br> 
-                    <br>
-                    The creation process for this game is quite simple, I had been playing a lot of 
-                    <a href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank"> Brotato</a>
-                    and had recently done a 48 hour gamejam where I attempted to create a similar auto-shooter wave game however,
-                    the end project did not turn out as well as I had hoped. However, I still wanted to try my hand at the genre, 
-                    and when my game-dev class tasked me with making a top down shooter for a project, I knew exactly 
-                    what I wanted to do for said project. Thus, 2D-Shooter 2: Electric Boogaloo was born. 
-                    (No there isn't a prequel to the game).
-                    <br>
-                    <br>
-                    The biggest hurdle associated with this project was by far creating the upgrade system. In fact,
-                    I would say that about half of my development time went into the creation of the upgrade system.
-                    The biggest reason for this relatively long development time of one system was simply that I, at
-                    this point, was inexperienced and had to spend a long amount of time thinking how I should handle
-                    the upgrade implementation.
-                    <br>
-                    <br>
-                    Firstly, I had to allow a way to dynamically change values across different scripts (preferably without
-                    doing anything within update). I accomplished this by sending through the upgrade info as a parameter in an
-                    event that would fire whenever the upgrade UI button was pressed, and this event would then trigger a function
-                    that would change stored stat modifiers tied to each stat, Once this section of the system was done, everything
-                    else fell into place nicely, and was mostly just UI and stat implementation. 
-                    <br>
-                    <br>
-                    Secondly, I needed a way to apply
-                    weights to each upgrade so that they were more or less likely to be chosen from the upgrade pool. While seemingly
-                    simple, this took me quite a while to figure out, mostly due to me struggling to understand the math behind this 
-                    process, however, I eventually figured this out and was able to implement a rarity system for the upgrades within
-                    the game and my upgrade system was completed.
-                    <br>
-                    <br>
-                    Unfortunately, after going back and trying to extract my upgrade system into it's own project for further development,
-                    I came to the realization that I had not made the system as isolated as I had thought and a lot of the scripts were actually
-                    quite tightly coupled to the game itself, so while I had made a functioning upgrade system for 2D-Shooter 2, I had not made 
-                    a generic system that could be resused in future projects. Though, the time I spent on this upgrade system would eventually
-                    lead me to make my upgrade System 3.0 (this being 2.0 and the gamejam version being 1.0).
-                </p>
+                <section class="intro">
+                    <h2 style="color: white;">Development Details</h2>
+                    <ul style="color: white;">
+                        <li><strong>Development Time:</strong> 2 weeks</li>
+                        <li><strong>Team Size:</strong> Solo</li>
+                        <li><strong>Goals:</strong>
+                            <ul>
+                                <li>Create a system that allows emergent gameplay</li>
+                                <li>Create a generic upgrade system that could be reused in future projects</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="body">
+                    <div class="image__p"> 
+                        <figure style="float: left; ">
+                            <img src="images/2D-Shooter-1.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
+                            <figcaption><i>An example mid-game build</i></figcaption>
+                        </figure>
+                        <p>
+                            The creation process for this game is quite simple, I had been playing a lot of 
+                            <a href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank"> Brotato</a>
+                            and had recently done a 48 hour gamejam where I attempted to create a similar auto-shooter wave game however,
+                            the end project did not turn out as well as I had hoped. However, I still wanted to try my hand at the genre, 
+                            and when my game-dev class tasked me with making a top down shooter for a project, I knew exactly 
+                            what I wanted to do for said project. Thus, 2D-Shooter 2: Electric Boogaloo was born. 
+                            (No there isn't a prequel to the game).
+                        </p>
+                    </div>
+                    <div class="image__p"> 
+                        <figure style="float: left; ">
+                            <img src="images/2D_Shooter2_Electric.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
+                            <figcaption><i>Example of several of a single upgrade <br> stacked on one another</i></figcaption>
+                        </figure>
+                        <p>
+                            The biggest hurdle associated with this project was by far creating the upgrade system. In fact,
+                            I would say that about half of my development time went into the creation of the upgrade system.
+                            The biggest reason for this relatively long development time of one system was simply that I, at
+                            this point, was inexperienced and had to spend a long amount of time thinking how I should handle
+                            the upgrade implementation.
+                        </p>
+                    </div>
+                    <div class="image__p"> 
+                        <figure style="float: left; ">
+                            <img src="images/UpgradeSys_Flow_Chart.png" alt="pic" id="planet_image" style="width: 700px;">
+                            <figcaption><i>Simple flow chart of how upgrades are handled</i></figcaption>
+                        </figure>
+                        <p>
+                            Firstly, I had to allow a way to dynamically change values across different scripts (preferably without
+                            doing anything within update). I accomplished this by sending through the upgrade info as a parameter in an
+                            event that would fire whenever the upgrade UI button was pressed, and this event would then trigger a function
+                            that would change stored stat modifiers tied to each stat, Once this section of the system was done, everything
+                            else fell into place nicely, and was mostly just UI and stat implementation. 
+                        </p>
+                    </div>
+                    <div class="image__p"> 
+                        <figure style="float: left; ">
+                            <img src="images/Upgrades_All_Rarities.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px">
+                            <figcaption><i>Example of the different upgade rarities</i></figcaption>
+                        </figure>
+                        <p>
+                            Secondly, I needed a way to apply
+                            weights to each upgrade so that they were more or less likely to be chosen from the upgrade pool. While seemingly
+                            simple, this took me quite a while to figure out, mostly due to me struggling to understand the math behind this 
+                            process, however, I eventually figured this out and was able to implement a rarity system for the upgrades within
+                            the game and my upgrade system was completed.
+                        </p>
+                    </div>
+                    <div class="image__p"> 
+                        <p>
+                            Unfortunately, after going back and trying to extract my upgrade system into it's own project for further development,
+                            I came to the realization that I had not made the system as isolated as I had thought and a lot of the scripts were actually
+                            quite tightly coupled to the game itself, so while I had made a functioning upgrade system for 2D-Shooter 2, I had not made 
+                            a generic system that could be resused in future projects. Though, the time I spent on this upgrade system would eventually
+                            lead me to make my upgrade System 3.0 (this being 2.0 and the gamejam version being 1.0).
+                        </p>
+                    </div>
+                </section>
             </div>
 
 
@@ -255,80 +285,126 @@
 
             </div>
                 <div class="large-text-container">
+                    <section class="intro">
+                        <h2 style="color: white;">Development Details</h2>
+                        <ul style="color: white;">
+                            <li><strong>Development Time:</strong> 6 weeks</li>
+                            <li><strong>Team Size:</strong> 5</li>
+                            <li><strong> Role: Programming lead</strong></li>
 
-                    <p>
-                        Development Time:
-                        6 weeks
-                        <br>
-                        <br>
-                        Team Size:
-                        5
-                        <br>
-                        <br>
-                        Goals:
-                        <br>
-                        Create designer friendly tools
-                        <br> Learn how to create a secure save/load system
-                        <br> Create clean and reusable scripts.
-                        <br>
-                        <br>
-                        Role:
-                        Programming Lead
-                    </p>
-                    <p><br>
-                        One of the most challenging aspects of creating this game was definitely making the movement feel good.
-                        My first approach to this problem was simple: make the movement physics-based and use forces to allow the
-                        player to gain momentum and feel realistic. This did not turn out well. One of the main issues with this 
-                        approach was that, well, realistic movement is realistic. The player needed time to counteract their momentum
-                        if they wanted to change directions, resulting in very sluggish and unresponsive gameplay.
-                    </p>
-                    <p><br>
-                        The next approach I tried was to still use physics but make the physics work in an unrealistic way. That is,
-                        simulate forces on the player but modify how those forces act so that the movement feels snappy while still
-                        giving the character a sense of weight and momentum. The hardest part of this was creating custom physics
-                        to allow the player to have both a max speed when using basic inputs, as well as the ability to exceed that
-                        max speed if an external force (such as an explosion) was applied to the character. Unfortunately, due to
-                        time constraints, the game does not include any mechanics to generate explosive force. However, this
-                        functionality can still be observed when using the dash ability.
-                    </p>
-                    <p><br>
-                        Another aspect of this project that I learned a great deal from was the creation of the encounter system.
-                        My main objective when planning and developing this system was to enable designers to streamline the creation
-                        of encounters for each level. The primary way I accomplished this was through Unity's custom GUI tools.
-                        I had always been interested in learning how to use these tools, so I made it my goal for this project to
-                        utilize them to simplify aspects of design that would otherwise become tedious and inefficient.
-                    </p>
-                    <p><br>
-                        This mindset led to the development of our encounter system. Using Unity's custom GUI tools, I created an editor
-                        tool that allowed our designer to create "encounters" (hence the name encounter system). An encounter consisted
-                        of a set number of waves, and each wave would spawn a specified number of enemies at various locations around
-                        the encounter area. The editor tool also allowed the designer to drag all the enemies they wanted to spawn
-                        in a wave, position them where they should spawn, and then simply press a single button to create a new wave
-                        for the selected encounter. This process enabled our designer to rapidly create dynamic enemy encounters in
-                        mere minutes, whereas previously it could have taken upwards of half an hour. Additionally, the tool handled
-                        the implementation of waves and encounters into the game, meaning that once one was set up, we could immediately
-                        test and iterate on it without requiring any extra integration steps.
-                    </p>
-                    <p><br>
-                        I also wanted to experiment with creating a save/load system for this game to allow players to save their progress
-                        and return later if they desired. This system became integrated into the game's checkpoint system as an autosave
-                        feature. To elaborate further, each checkpoint doubles as a save point, saving your progress and storing it in
-                        the designated save file. Every time you die, the game loads the saved data from your file and restarts you at
-                        the checkpoint. The save file is also binary-encoded to prevent easy alteration.
-                    </p>
-                    <div class="image__p"> 
-                        <figure style="float: left; ">
-                            <img src="images/Sterile_Coffin_UML.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 1000px">
-                            <figcaption><i>The simplified systems UML diagram</i></figcaption>
-                        </figure>
-                        <p>
-                            As a way to visually document the relationships between all these systems, I maintained a basic UML diagram throughout the project
-                            (with functions and variables omitted). Before working on any new system, I spent time integrating it into this UML diagram. Doing
-                            this throughout the project made my code much cleaner and more decoupled, as I had already planned out the necessary relationships
-                            beforehand and only added new ones when required.
-                        </p>
+                            <li><strong>Goals:</strong>
+                                <ul>
+                                    <li>Create designer friendly tools</li>
+                                    <li>Learn how to create a secure save/load system</li>
+                                    <li>Create clean and reusable scripts.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
 
-                    </div>
+                    <section class="body">
+                        <div class="image__p"> 
+                            <div style="display: flex;">
+                                <figure >
+                                    <img src="images/Pre_movement_standard.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i>First iteration movement</i></figcaption>
+                                </figure>
+                                <figure >
+                                    <img src="images/pre-dashing.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i> First iterateration of the dashing mechanic</i></figcaption>
+                                </figure>
+                            </div>
+                            <p>
+                                One of the most challenging aspects of creating this game was definitely making the movement feel good.
+                                My first approach to this problem was simple: make the movement physics-based and use forces to allow the
+                                player to gain momentum and feel realistic. This did not turn out well. One of the main issues with this 
+                                approach was that, well, realistic movement is realistic. The player needed time to counteract their momentum
+                                if they wanted to change directions, resulting in very sluggish and unresponsive gameplay.
+                            </p>
+                        </div>
+                        <div class="image__p"> 
+                            <div style="display: flex;">
+                                <figure >
+                                    <img src="images/final_movement.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i>Final iteration of movement</i></figcaption>
+                                </figure>
+                                <figure >
+                                    <img src="images/final_dash.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i>Final iteration of the dashing mechanic</i></figcaption>
+                                </figure>
+                            </div>
+                            <p>
+                                The next approach I tried was to still use physics but make the physics work in an unrealistic way. That is,
+                                simulate forces on the player but modify how those forces act so that the movement feels snappy while still
+                                giving the character a sense of weight and momentum. The hardest part of this was creating custom physics
+                                to allow the player to have both a max speed when using basic inputs, as well as the ability to exceed that
+                                max speed if an external force (such as an explosion) was applied to the character. Unfortunately, due to
+                                time constraints, the game does not include any mechanics to generate explosive force. However, this
+                                functionality can still be observed when using the dash ability.
+                            </p>
+                        </div>
+                        <div class="image__p"> 
+                            <figure >
+                                <img src="images/WaveGUI.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 700px;">
+                                <figcaption><i>Custom Wave System GUI</i></figcaption>
+                            </figure>
+                            <p>
+                                Another aspect of this project that I learned a great deal from was the creation of the encounter system.
+                                My main objective when planning and developing this system was to enable designers to streamline the creation
+                                of encounters for each level. The primary way I accomplished this was through Unity's custom GUI tools.
+                                I had always been interested in learning how to use these tools, so I made it my goal for this project to
+                                utilize them to simplify aspects of design that would otherwise become tedious and inefficient.
+                            </p>
+                        </div>
+                        <div class="image__p"> 
+                            <div style="display: flex;">
+                                <figure >
+                                    <img src="images/EncounterSys_GUI.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 475px;">
+                                    <figcaption><i>Custom Ecounter System GUI</i></figcaption>
+                                </figure>
+                                <figure >
+                                    <img src="images/Encounter_GUI.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i> Custom Ecounter GUI</i></figcaption>
+                                </figure>
+                            </div>
+                            <p>
+                                This mindset led to the development of our encounter system. Using Unity's custom GUI tools, I created an editor
+                                tool that allowed our designer to create "encounters" (hence the name encounter system). An encounter consisted
+                                of a set number of waves, and each wave would spawn a specified number of enemies at various locations around
+                                the encounter area. The editor tool also allowed the designer to drag all the enemies they wanted to spawn
+                                in a wave, position them where they should spawn, and then simply press a single button to create a new wave
+                                for the selected encounter. This process enabled our designer to rapidly create dynamic enemy encounters in
+                                mere minutes, whereas previously it could have taken upwards of half an hour. Additionally, the tool handled
+                                the implementation of waves and encounters into the game, meaning that once one was set up, we could immediately
+                                test and iterate on it without requiring any extra integration steps.
+                            </p>
+                        </div>
+                        <div class="image__p"> 
+                            <figure style="float: left; ">
+                                <!-- <img src="images/Titan.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
+                                <figcaption><i>An in-game image of one of Saturn's moons: Titan.</i></figcaption> -->
+                            </figure>
+                            <p>
+                                I also wanted to experiment with creating a save/load system for this game to allow players to save their progress
+                                and return later if they desired. This system became integrated into the game's checkpoint system as an autosave
+                                feature. To elaborate further, each checkpoint doubles as a save point, saving your progress and storing it in
+                                the designated save file. Every time you die, the game loads the saved data from your file and restarts you at
+                                the checkpoint. The save file is also binary-encoded to prevent easy alteration.
+                            </p>
+                        </div>
+                        <div class="image__p"> 
+                            <figure style="float: left; ">
+                                <img src="images/Sterile_Coffin_UML.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 1000px;">
+                                <figcaption><i>The simplified systems UML diagra</i></figcaption>
+                            </figure>
+                            <p>
+                                As a way to visually document the relationships between all these systems, I maintained a basic UML diagram throughout the project
+                                (with functions and variables omitted). Before working on any new system, I spent time integrating it into this UML diagram. Doing
+                                this throughout the project made my code much cleaner and more decoupled, as I had already planned out the necessary relationships
+                                beforehand and only added new ones when required.
+                            </p>
+                        </div>
+                    </section>
                 </div>
 
 

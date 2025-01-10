@@ -24,7 +24,7 @@
 /* Navbar Inner Container */
 .navbar__container 
 {
-    display: flex; /* Uses flexbox to arrange child elements */
+    display: flex;
     
     justify-content: space-between; /* Distributes space between child elements */
     align-items: center;
