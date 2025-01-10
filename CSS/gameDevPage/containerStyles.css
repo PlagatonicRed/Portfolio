@@ -98,6 +98,11 @@
     display:flex;
 }
 
+.text_image
+{
+    width:100%;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 960px) {
 
@@ -115,9 +120,6 @@
 
     .image__p figure
     {
-        padding: 0px;
-        padding-top: 30px;
-        padding-bottom:30px;
         align-items: center;
     }
 
