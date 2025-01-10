@@ -30,6 +30,11 @@
     border: 2px solid #512da8; */
 }
 
+.intro
+{
+    margin-bottom: 40px;
+}
+
 /* Button Alignment */
 .btn 
 {
@@ -88,6 +93,11 @@
     padding: 30px;
 }
 
+.mult_images
+{
+    display:flex;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 960px) {
 
@@ -101,6 +111,36 @@
         height :fit-content;
         /* background-color: #e0e0e0;
         border: 2px solid #512da8; */
+    }
+
+    .image__p figure
+    {
+        padding: 0px;
+        padding-top: 30px;
+        padding-bottom:30px;
+        align-items: center;
+    }
+
+
+    .image__p
+    {
+        width: 90vw;
+        align-items: center;
+
+    }
+
+    .text_image 
+    {
+        max-width: 100%; /* Ensures the image does not overflow horizontally */
+        height: auto; /* Maintains aspect ratio */
+        display: block; /* Removes inline spacing issues */
+    }
+
+    .mult_images
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .temp__class
