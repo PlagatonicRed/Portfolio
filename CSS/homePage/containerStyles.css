@@ -134,6 +134,9 @@
     display: grid; /* Enable grid layout */
     grid-template-columns: 1fr; /* Create one column */
     grid-auto-rows: auto; /* Ensure the rows adjust based on content size */
+    /* border: 2px solid rgb(255, 242, 242); */
+    height: 100%;
+    align-content: center;
 }
 
 

@@ -81,6 +81,7 @@
     justify-content: center; /* Optional: Centers the content along the main axis */
     align-items: center; /* Optional: Centers the content along the cross axis */
 }
+
 .image__p figcaption
 {
     text-align: center;
