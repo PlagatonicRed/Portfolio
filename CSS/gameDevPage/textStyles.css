@@ -9,9 +9,18 @@
     color: #fbff00
 }
 
+.mine-shoot__content h1
+{
+    color:  #ff9100
+}
+
 .sterile-coffin__content p
 {
     color: #fff
+}
+.mine-shoot__content p
+{
+    color: #fff9bf
 }
 
 .large-text-container p

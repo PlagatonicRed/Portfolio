@@ -25,7 +25,12 @@
 
 .sol__btn:after
 {
-    background: #ff8177;
+    background: #ff8177
+}
+
+.mine-shoot__btn:after
+{
+    background: #ff9100
 
 }
 

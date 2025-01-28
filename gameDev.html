@@ -419,8 +419,136 @@
 
         </div>
 
+        <div class="main__container">
+
+            <div class="main__img--container">
+                <a href="https://plagatonicred.itch.io/mine-shoot" target="_blank">
+                    <img class="text_image" src="images/Mine shoot Cover Image.png" alt="pic" id="main__img">
+                </a>
+                
+            </div>
+
+            <div class="content mine-shoot__content">
+                <h1>MineShoot</h1>
+                <p>
+                    MineShoot is a procedurally generated, space, fps, where your goal is to make as much money as possible
+                    through mining while also eliminating hostile creatures on surrounding stations.
+                    <a href="https://plagatonicred.itch.io/mine-shoot" target="_blank">Click here</a> 
+                    or on the cover image to go to the game page
+                </p>
+                <button class="btn mine-shoot__btn">
+                    <p class="read-more">Read More</p>
+                </button>
+
+            </div>
+                <div class="large-text-container">
+                    <section class="intro">
+                        <h2 style="color: white;">Development Details</h2>
+                        <ul style="color: white;">
+                            <li><strong>Development Time:</strong> 3 weeks</li>
+                            <li><strong>Team Size:</strong> Solo</li>
+
+                            <li><strong>Goals:</strong>
+                                <ul>
+                                    <li>Create an interactive and immersive UI</li>
+                                    <li>Create an optimized, procedurally generated environment</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </section>
+
+                    <section class="body">
+                        <div class="image__p"> 
+                            <div class="mult_images">
+                                <figure >
+                                    <img class="text_image" src="images/Procedural_Generation_External.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i>Demonstration of chunk loading and deloading system</i></figcaption>
+                                </figure>
+                                <figure >
+                                    <img class="text_image" src="images/player_generation_pov.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i> Player point of view of chunks loading and deloading with low render medium render distance</i></figcaption>
+                                </figure>
+                            </div>
+
+                            <p>
+                                The most memorable aspect of MineShoot's developement is by far the procedural generation system.
+                                It was also suprisingly easy (at least in comparison to some of the other systems that I will talk about in more detail later).
+                                At a basic level the system works by using perlin noise to generate a random array of asteroids and buildings each of which also
+                                have independant aspects that are also randomly generated. Then, once the player has loaded the chunk for the first time, all the objects
+                                within the chunk are then hashed and stored for faster retrieval when reloading a visited chunk.
+                            </p>
+                        </div>
 
 
+                        <div class="image__p"> 
+                            <div class="mult_images">
+                                <figure >
+                                    <img class="text_image" src="images/Building_Generation.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i>Demonstration of building generation system</i></figcaption>
+                                </figure>
+                                <figure >
+                                    <img class="text_image" src="images/Asteroid_Generation.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i> Several different generated asteroids</i></figcaption>
+                                </figure>
+                            </div>
+
+                            <p>
+                                As mentioned briefly above, each object also has random aspects associated with them. The asteroid have their ores chosen randomly from a wieghted list
+                                and then placed at random around the asteroid. For the buildings they use modular procedural generation, where each room has nodes that other rooms can
+                                spawn off of, with a limit to the max amount of rooms to avoid excessive resource usage.
+                            </p>
+                        </div>
+                        <div class="image__p"> 
+                            <div class="mult_images">
+                                <figure >
+                                    <img class="text_image" src="images/Shop_UI.gif" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i>Demonstration of the in-game shop UI</i></figcaption>
+                                </figure>
+                                <figure >
+                                    <img class="text_image" src="images/inventory.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                    <figcaption><i> A picture of the player's inventory</i></figcaption>
+                                </figure>
+                            </div>
+
+                            <p>
+                                The other major point of development for this game was UI and the inventory system, I wanted to create a robust inventory system that allowed for
+                                increased user activity. To accomplish this I created a system that has inventory stacking, searching, and dragging. The inventory also serves as a 
+                                way to facilitate gameplay through the use of the hotbar, that also allows for the user to drag items from their inventory into the hotbar. 
+                                While the UI assets are rather bare bones, I was mostly focused on the layout of the elements
+                                rather than creating completely visually polished menu system. 
+                            </p>
+                        </div>
+
+                        <div class="image__p"> 
+                            <figure >
+                                <img class="text_image" src="images/enemyAI_.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020; width: 500px;">
+                                <figcaption><i>Picture of insectoid enemies on a station</i></figcaption>
+                            </figure>
+
+                            <p>
+                                While I thought that the toughest section of this game would be creating and optimizing the procedural generation, it turns out that this was not the case.
+                                Instead the hardest and most grueling section of this developement cycle would be the creation of the ai and trying to allow them to move on any surface in 3D space.
+                                This was particularly challenging due to me trying to mold Unity's built in navmesh component to create this intended behavior, and it caused me many hours of both
+                                frustration and anger throughout this project. If I were to revisit this issue today, I would most likely either develop my own AI navigation or use a different library
+                                with more inherant flexibility.
+                            </p>
+                        </div>
+
+                        <div class="image__p"> 
+
+                            <p>
+                                Overall, I'm happy with how the techincal aspects of the game turned out, though I will acknowledge that the game as a whole is rather lackluster.
+                                I attribute this rather bland gameplay experience to a lack of real a gameplay loop outside of simple resource collection. I think the game would also
+                                greatly benefit from more time being spent on art asset creation and additional gameplay "juice".
+
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- This reads the footer.html and dynamically inserts it into the page -->

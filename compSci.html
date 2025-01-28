@@ -206,6 +206,82 @@
 
 
         </div>
+
+        <div class="main__container">
+
+            <div class="main__img--container">
+                <!-- This is where an image is loaded in -->
+                <a href="https://github.com/PlagatonicRed/ConwaysLife" target="_blank">
+                    <img src="images/text_document_backend_cover.png" alt="pic" id="main__img">
+                </a>
+            </div>
+
+            <div class="content main__content">
+                <h1>Text Document Service Backend </h1>
+                <!-- <h2>TECHNOLOGY</h2> -->
+                <p>
+                    A simple containerized program that leverages SQL to allow users to view and modify text documents.
+                </p>
+                <button class="btn sol__btn">
+                    <p class="read-more">Read More</p>
+                </button>
+
+            </div>
+
+            <div class="large-text-container">
+                
+                <section class="intro">
+                    <h2 style="color: white;">Development Details</h2>
+                    <ul style="color: white;">
+                        <li><strong>Development Time:</strong> 3 weeks</li>
+                        <li><strong>Team Size:</strong> Solo</li>
+                        <li><strong>Goals:</strong>
+                            <ul>
+                                <li>Work with databases in order to create a usable backend service</li>
+                                <li>Leverage containerization to lower application size</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="body">
+
+
+                    <div class="image__p"> 
+                        <figure style="float: left;">
+                            <!-- <img src="images/Titan.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
+                            <figcaption><i>An in-game image of one of Saturn's moons: Titan.</i></figcaption> -->
+                        </figure>
+                        <p>
+                            This application consists of four microservices that work together to manage user text document functionalities.
+                            The microservices are as follows: the user service, the document manager service, the document search service,
+                            and the logging service. The user service manages user-related operations such as account creation, login,
+                            and validation. The document manager service handles tasks like creating, editing, and updating documents.
+                            The document search service allows users to search for documents based on specific criteria, ensuring
+                            efficient retrieval. The logging service tracks user actions and maintains a history of their activities, 
+                            giving users access to a detailed record of their interactions within the system.
+                    </div>
+
+                    <div class="image__p"> 
+                        <figure style="float: left;">
+                            <!-- <img src="images/Titan.png" alt="pic" id="planet_image" style="box-shadow: 0 0 5px 5px #202020;">
+                            <figcaption><i>An in-game image of one of Saturn's moons: Titan.</i></figcaption> -->
+                        </figure>
+                        <p>
+                            Each microservice is containerized using a dedicated Docker image, ensuring that each system operates in complete isolation
+                            from the others while maintaining full functionality as an independent unit. This approach encapsulates all the necessary
+                            dependencies, configurations, and runtime environments within the container, making each microservice self-sufficient
+                            and portable. Containerization also enables seamless communication between the services, allowing them to work together
+                            as a cohesive system while remaining decoupled. This isolation enhances reliability, simplifies debugging, and ensures
+                            that changes or issues within one microservice do not impact the performance or stability of the others.
+                        </p>
+                    </div>
+
+                </section>
+            </div>
+
+
+        </div>
     </div>
 
     <!-- This reads the footer.html and dynamically inserts it into the page -->
